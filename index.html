@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дз №8</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrapper" class="wrap">
+      <div class="hello">
+        <h1 class="hello-upline">Привет, это домашнее заданее</h1>
+        <h2>Здесь есть 5 игр, выберете в какую хотите сыграть</h2>
+      </div>
+      <div class="hello-buttons">
+        <button class="car-button" id="car-button">Машинки</button>
+        <button id="plates-button" class="guess-plate">
+          Угадай нужную плитку
+        </button>
+        <button id="numbers-button" class="guess-number">Угадай число</button>
+        <button class="speed-click-button" id="speedClick-button">Клики на скорость</button>
+        <button class="dino-button" id="dino-button">Дино</button>
+      </div>
+    </div>
+    <div id="plateOff">
+      <div id="plate-wrap" class="plate-wrap">
+        <div class="plate-game">
+          <h1 class="plate-hello">
+            Перед вами поле из плиток, что бы выиграть вам нужно выбрать
+            правильную
+          </h1>
+          <div class="plates">
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button id="true-plate" class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+            <button class="plate"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="numberOff">
+      <div id="number-wrap">
+        <div class="number-game">
+          <h1 class="number-text">
+            Вам нужно угадать загаданное число (от 1 до 10) (ответ можно найти в
+            консоли)
+          </h1>
+          <div class="number-play">
+            <input
+              type="number"
+              id="number-input"
+              class="number-input"
+              min="1"
+              max="10" />
+            <button id="numberOutput" class="number-output">Ответить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="speedClickOff">
+      <div id="speedClick-wrap">
+        <div class="speedClick-game">
+          <h1 class="speedClick-text">
+            Перед вами кнопка, как только вы на неё нажмёте начинаается
+            пятисекундный отсчёт, по его окночании вы увидете сколько раз вы
+            успели кликнуть по кнопке
+          </h1>
+          <button class="speedClick-button" id="speedClick-game-button">Нажимай!!!</button>
+          <h2 id="click-count"></h2>
+        </div>
+      </div>
+    </div>
+    <div class="congrats-wrap" id="congrats-wrap">
+      <div class="congrats">
+        <h1 class="congrats-text">
+          Поздравляем, вы выиграли, сейчас страница перезагрузится
+        </h1>
+      </div>
+    </div>
+   <div id="carOff">
+      <div id="carWrap">
+        <div class="carGame" id="carGame">
+          <h1 class="carAbout">В этой игре нужно нажимать на клавиатуру пока что машинки не врежутся</h1>
+          <div class="carRoad" id="carRoad"></div>
+        </div>
+      </div> 
+   </div>
+   <div id="dinoOff">
+      <div id="dinoWrap">
+        <div id="dinoGame" class="dinoGame">
+          <div id="dino"></div>
+          <div id="cactus"></div>
+          <h2 class="dino-text">Я не смог сделать проверку жив ли динозавр, поэтому он будет бессмертным, но при нажатии он прыгает!</h2>
+          <button class="dino-reload" id="dino-reload">Выход из игры</button>
+        </div>
+      </div>
+   </div>
+    <script src="script.js"></script>
+  </body>
+</html>
